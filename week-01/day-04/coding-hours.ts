@@ -15,8 +15,5 @@
 console.log(17*5*6);
 console.log(((17*5*6)/(17*52))*100);
 
-const = a {
-    console.log(17*5*6);
-}
-
-console.log(a / (17*52) * 100);
+const  a = (17*5*6);
+console.log(a / (17*52)*100);
