@@ -13,7 +13,7 @@
 
 
 console.log(17*5*6);
-
-
-
 console.log(((17*5*6)/(17*52))*100);
+
+var myvar = console.log(17*5*6);
+console.log(myvar / (17*52) * 100);
