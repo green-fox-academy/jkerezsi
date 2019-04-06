@@ -1,4 +1,4 @@
-https://github.com/jkerezsi/git-lesson-repository
+[My git lesson repository] (https://github.com/jkerezsi/git-lesson-repository)
 
 https://github.com/jkerezsi/hello-world
 
