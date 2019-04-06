@@ -4,9 +4,14 @@
 // Example input: 5
 // Example output: Sum: 15, Average: 3
 
-let input: number = 5
+let input: number = 5;
+let average: number = 0;
+let sum: number = 0;
 
-for (let i: number = 1; i < input; i++) {
-    console.log(i);
+for (let i = 1; i <= input; i++) {
+    sum = sum + i;
+    console.log(`the current iterator is ${sum} and the sum is ${sum}`);
 }
- 
+
+average = sum / input;
+console.log('Average: ' + average);
