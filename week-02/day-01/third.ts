@@ -4,11 +4,8 @@
 
 'use strict';
 
-let magicNumbers: [1, 3, 5, 7];
+let magicNumbers;
+magicNumbers = [1, 3, 5, 7];
 
-function (magicNumbers) {
-    return magicNumbers.filter(2);
-}
-
-console.log(magicNumbers);
+console.log(magicNumbers[2]);
 
