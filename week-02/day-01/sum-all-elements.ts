@@ -3,13 +3,16 @@
 
 'use strict';
 
-let ai = [3, 4, 5, 6, 7];
+let ai;
+ai = [3, 4, 5, 6, 7];
+let newAi = 0;
 
-function (add) {
-    add = ai.reduce(function(a, b) {
-        return a + b;
+function nameit(ai) {
+    for(let i = 0; i < ai.length; i++) {
+        newAi = newAi + ai[i];
+        return newAi;
     }
-    )
+}
 
-    console.log(add);
-
+console.log(nameit(ai));
+  

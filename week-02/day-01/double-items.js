@@ -10,4 +10,3 @@ function (newdrinks) {
     newdrinks = drinks.map(double => {
         double = 
 }
-
