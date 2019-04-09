@@ -13,15 +13,3 @@
 
 'use strict';
 
-let one: string = "1";
-let zero: string = "0";
-let linecount: number = 4;
-let rowitems: number = linecount;
-
-function matrix(ez) {
-    for (let i = 0; i <= linecount, i++) {
-        ematrix = 
-    }
-}
-
-let matrix = []

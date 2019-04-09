@@ -8,5 +8,5 @@ let drinks = ["Gin", "Whiskey", "Wine", "Beer"];
 
 function (newdrinks) {
     newdrinks = drinks.map(double => {
-        double = 
+        double = c
 }
