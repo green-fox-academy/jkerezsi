@@ -3,7 +3,7 @@
 function stringsA(yes :string){
 
     if (yes.indexOf('x') > -1) {
-        return stringsA(yes.replace('x','y')); 
+        return stringsA(yes.replace('x','')); 
      } else {
                 return yes;
             }
