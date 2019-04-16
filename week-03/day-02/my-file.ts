@@ -8,7 +8,7 @@ console.log(fileContent);
 
 
 try {
-    if (fileContent === null) {
+    if (fileContent === '') {
         throw new Error('Unable to read file: my-file.txt');
     }
 } catch (e) {
