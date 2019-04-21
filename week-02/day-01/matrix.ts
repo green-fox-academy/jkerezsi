@@ -13,3 +13,18 @@
 
 'use strict';
 
+
+
+function creatematrix(matrixSize): void {
+    const matrix: number [][] = [];
+
+    for(let i: number = 0; i < matrixSize; i++) {
+        matrix[i] = [];
+    for(let j: number = 0; j < matrixSize; j++) {
+        matrix [i] [j] = j === (matrixSize - i - 1) ? 1:0;
+    }
+    console.log(matrix[i]);
+}
+}
+
+creatematrix(5);
