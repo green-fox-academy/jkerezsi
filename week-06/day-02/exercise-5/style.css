@@ -1,0 +1,53 @@
+
+body {
+    width: 800px;
+    margin: 0 auto;
+}
+.navigation {
+    display: flex;
+    background-color: rgb(42,234,255);
+    height:15vh;
+    width: 100%;
+    margin:0px;
+    padding:0px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    height:70vh;
+    align-content: center;
+}
+
+.main-content{
+    display: flex;
+    flex-grow: 3;
+    background-color: red;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.sidebar1{
+flex-grow: 1;
+background-color: orange;
+margin-right: 15px;
+}
+
+.sidebar2{
+    flex-grow: 1;
+    background-color: purple;
+    margin-left: 15px;
+}
+
+footer {
+    height:15vh;
+    background-color: blue;
+}
+
+.element{
+    background-color: black;
+    height:60px;
+    width:60px;
+    margin: 15px;
+    
+}
