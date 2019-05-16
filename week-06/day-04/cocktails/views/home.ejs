@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <title>Cocktails</title>
+  </head>
+  <body>
+    <h1>Cocktails</h1>
+    <ul>
+        <li>ALL</li>      
+        <% for(let item of alcohols) { %>
+          <li><%= item %></li>
+          <% } %> 
+        </ul>
+    <ul>
+      <% for(let item of list) { %>
+      <li><%= item.name %></li>
+      <% } %>   
+    </ul>
+  </body>
+</html>
