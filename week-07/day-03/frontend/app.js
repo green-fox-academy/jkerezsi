@@ -42,6 +42,16 @@ app.get('/greeter', (req, res) => {
   res.send(greetObject)}
 });
 
+
+app.get('/appenda/:appendable', (req,res) => {
+  let appendable = req.params.appendable
+  let object = {
+    "appended": appendable + "a"
+  }
+  res.send(object)
+});
+
+
 app.listen(PORT, () => {
   console.log(`The server is up and running on ${PORT}`);
 });
