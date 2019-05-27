@@ -1,0 +1,127 @@
+
+body{
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+}
+
+.navigation {
+    display: flex;
+    position: fixed;
+    z-index: 200;
+    background-color: rgb(213,0,255);
+    height:100px;
+    margin:0px;
+    padding:0px;
+    width: 100vw;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.link1{
+    width: 130px;
+    height: 40px;
+    margin-left: 20px;
+    background-color: rgb(42,234,255);
+    list-style-type: none;
+    align-items: center;
+}
+.link2{
+    width:80px;
+    height: 40px;
+    margin-left: 20px;
+    background-color:rgb(42,234,255);
+    list-style-type: none;
+    align-items: center;
+}
+.link3{
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+    background-color: rgb(42,234,255);
+    list-style-type: none;
+    align-items: center;
+}    
+.link4{
+        width: 120px;
+        height: 40px;
+        margin-left: 20px;
+        background-color: rgb(42,234,255);
+        list-style-type: none;
+        align-items: center;
+}
+.links{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.content{
+    display: flex;
+    position: relative;
+    align-items: center;
+    top: 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 1200px;
+}
+
+p{
+    line-height: 15px;
+    font-size: 20px;
+    border-block-start: 0;
+margin-block-start: 0;
+margin-block-end:0;
+margin-left: 10px;
+margin-right: 10px;
+}
+h3{
+margin-left: 10px;
+
+}
+
+.block{
+    background-color: green;
+    height: 400px;
+    width: 48%;
+    margin: 5px;
+}
+.block4{
+    background-color: green;
+    height: 400px;
+    width: 22%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block5{
+    background-color: green;
+    height: 400px;
+    width: 22%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rectangle{
+    background-color: red;
+    width: 70%;
+    height: 80%;
+    margin:10px;
+}
+footer{
+    background-color: grey;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    top:110px;
+    margin-bottom: 10px;
+}
