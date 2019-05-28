@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Workshop: EventListeners</title>
+  </head>
+  <body>
+    <button>Click</button>
+    <h1></h1>
+    <script>
+    let button = document.querySelector('button');
+    let h1 = document.querySelector('h1')
+        function delay(){
+            setTimeout(() => h1.innerText = "2 seconds ellapsed" , 2000);
+        }
+    button.addEventListener('click', delay)
+        </script>
+      </body>
+    </html>
