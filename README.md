@@ -1,9 +1,9 @@
-https://github.com/jkerezsi/git-lesson-repository
+<a href="https://github.com/jkerezsi/git-lesson-repository">Git lesson repo</a>
 
 <a href="https://github.com/jkerezsi/hello-world)">Hello World</a>
 
-https://github.com/jkerezsi/patchwork
+<a href="https://github.com/jkerezsi/patchwork">Patchwork</a>
 
-https://github.com/jkerezsi/jkerezsi.github.io
+<a href="https://github.com/jkerezsi/jkerezsi.github.io">My github.io</a>
 
-https://github.com/jkerezsi/todo-app
+<a href="https://github.com/jkerezsi/todo-app">Todo App</a>
