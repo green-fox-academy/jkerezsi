@@ -1,6 +1,6 @@
 https://github.com/jkerezsi/git-lesson-repository
 
-https://github.com/jkerezsi/hello-world)
+<a href="https://github.com/jkerezsi/hello-world)">Hello World</a>
 
 https://github.com/jkerezsi/patchwork
 
