@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="login.css"/>
+    <title>Login page</title>
+  </head>
+  <body>
+      <div class="white_box">
+      <div class="login-text">ACCOUNT LOGIN</div>
+      <form action="/login" method="GET">
+        <div>
+        <label for="username">USERNAME</label> 
+        <input type="username" id="username" required autofocus/>
+    </div>
+    <div>
+        <label for="PASSWORD">PASSWORD</label>
+        <input type="password" id="password" required/>
+    </div>
+    <div class="submit">
+        <input type="submit" id="submit" value="Login"/>
+    </div>  
+    </form>
+    </div>
+    <script>
+        let pwField = document.getElementById('password')
+        console.log(pwField)
+        let eye = pwField.style.background
+        console.log(eye)
+        eye.addEventListener('mousedown', (event) => {
+            pwField.type = "text";
+        });
+    </script>
+  </body>
+</html>
