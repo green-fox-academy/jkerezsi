@@ -10,32 +10,54 @@
       <form action="/signup" method="POST">
         <div>
           <h2>What is your favourite pet?</h2>
-        <label for="favourite_pet">Dog</label> 
-        <input type="radio" name="Dog" value="dog"> 
+          <input type="radio" name="pet" id="dog" value="dog" > 
+        <label for="favourite_pet">Dog</label><br>
 
-        <label for="favourite_pet">Cat</label> 
-        <input type="radio" name="Cat" value="cat">
+        <input type="radio" name="pet" id="cat" value="cat">
+        <label for="favourite_pet">Cat</label><br>
 
+        <input type="radio" name="pet" id="victor" value="Victor"> 
         <label for="favourite_pet">Victor the goldfish</label> 
-        <input type="radio" name="Victor" value="Victor"> 
     </div>
     <div>
         <h2>Do you want to sign up for cat facts?</h2>
-        <label for="cat_signup">Yes</label>
-        <input type="radio" name="yes">
+        <input type="radio" name="signup" id="yes" >
+        <label for="cat_signup">Yes</label><br>
+        <input type="radio" name="signup" id="no">
         <label for="cat_signup">No</label>
-        <input type="radio" name="no">
 
     </div>
     <div class="submit">
-        <input type="submit" id="submit" value="I love cats"/>
-        <input type="submit" id="submit" value="Sign up"/>
+        <input type="submit" id="love_cats" value="I love cats"/>
+        <input type="submit" id="sign_up" value="Sign up"/>
 
     </div>  
     </form>
     </div>
     <script>
-    
+    let catsButton = document.getElementById('love_cats')
+    let signUpButton = document.getElementById('sign_up')
+  
+
+    signUpButton.addEventListener('click', function (){
+    if (document.getElementById('dog').checked || document.getElementById('cat').checked){
+      signUpButton.disabled = false;
+    } else if (document.getElementById('victor').checked && document.getElementById('no').checked){
+      signUpButton.disabled = false;
+      window.alert("Sigh, we still added you to the cat facts list")
+    } else {
+      signUpButton.disabled = true;
+    }
+    });
+
+    catsButton.addEventListener('click', function (){
+    if(document.getElementById('yes').checked){
+      catsButton.disabled = false;
+      window.alert("Thank you, you've successfully signed up for cats facts!")
+    } else {
+      catsButton.disabled = true;
+    }
+    });
     </script>
   </body>
 </html>

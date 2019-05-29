@@ -33,14 +33,15 @@ div {
 }
 
 input{
-    display: inline-block;
+    display: inline-flexbox;
+    
 }
 
 label{
     font-size: 25px;
-font-weight: bold;
 font-family: 'Times New Roman';
 color: rgb(75, 75, 75);
+line-height: 50px;
 } 
 
 
