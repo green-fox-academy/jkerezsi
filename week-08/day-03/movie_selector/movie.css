@@ -1,0 +1,43 @@
+body{
+    background-color:lightgrey;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.box{
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:100px;
+    margin-left: 100px;
+    height: 400px;
+    width: 600px;
+    font-size: 30px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    -webkit-box-shadow: 19px 14px 4px 3px rgba(65,71,181,0.92);
+-moz-box-shadow: 19px 14px 4px 3px rgba(65,71,181,0.92);
+box-shadow: 19px 14px 4px 3px rgba(65,71,181,0.92);
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+}
+
+select{
+    width: 200px;
+    padding:10px;
+    margin-top: 15px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: normal;
+}
+div{
+    font-weight: bold;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="movie.css"/>
+    <title>Movie selector</title>
+  </head>
+  <body>
+      <div class="box">
+      <div>Movie Selector</div>
+      <form action="/selector" method="GET"> 
+    </form>
+    <select name="genre">
+        <option value="scifi">Sci-fi</option>
+        <option value="drama">Dram</option>
+        <option value="comedy">Comedy</option>
+      </select>
+      <select name="movie">
+          <option value="Moon ">Moon</option>
+          <option value="2001">2001: A Space Odyssey</option>
+          <option value="Contact">Contact</option>
+          <option value="Darkest">Darkest Hour</option>
+        </select>
+        <p>Selected movie is: -</p>
+    </div>
+    <script src="movie.js">
+    </script>
+  </body>
+</html>
