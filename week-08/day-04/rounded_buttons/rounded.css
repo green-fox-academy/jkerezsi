@@ -1,0 +1,49 @@
+.buttons{
+    height:600px;
+    width: 800px;
+    margin:50px;
+    background-color: rgb(35, 35, 124);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#red{
+    background-image: linear-gradient(to bottom, rgb(248, 32, 32),rgb(192, 16, 16));
+    height: 60px;
+    width: 150px;
+    margin-right: 50px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: snow;
+    font-family: serif;
+}
+#white{
+    background-image: linear-gradient(to bottom, white,lightgrey);
+    height: 60px;
+    width: 150px;
+    margin-right: 50px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: grey;
+    font-family: serif;
+}
+#green{
+background-image: linear-gradient(to bottom, rgb(55, 243, 55),rgb(34, 189, 34));
+height: 60px;
+width: 150px;
+margin-right: 50px;
+border-radius: 8px;
+font-size: 20px;
+    color: snow;
+    font-family: serif;
+}
+
+button:active{
+    filter: brightness(90%);
+}
+
+button:hover{
+    filter: brightness(110%);
+}
