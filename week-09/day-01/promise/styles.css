@@ -1,0 +1,15 @@
+.jokes{
+    margin: 30px;
+    background-color: rgba(12, 41, 121, 0.822);
+    border-radius: 10px;
+    height: 300px;
+    width: 400px;
+    align-content: center;
+    color: white;
+    font-size: 25px;
+    
+}
+button{
+    margin-left: 150px;
+    font-size: 30px;
+}
