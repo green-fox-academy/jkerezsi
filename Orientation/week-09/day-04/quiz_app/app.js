@@ -61,16 +61,16 @@ app.get('/api/questions', (req, res) => {
 
 app.post('/api/questions', (req, res) => {
     let question = req.body.question
-    let answer_1 = req.body.answers.answer_1
+    let answer_1 = req.body.answers[0].answer_1
     let ans_1_isCorrect = req.body.answers[0].is_correct
 
-    let answer_2 = req.body.answers.answer_2
+    let answer_2 = req.body.answers[1].answer_2
     let ans_2_isCorrect = req.body.answers[1].is_correct
 
-    let answer_3 = req.body.answers.answer_3
+    let answer_3 = req.body.answers[2].answer_3
     let ans_3_isCorrect = req.body.answers[2].is_correct
 
-    let answer_4 = req.body.answers.answer_4
+    let answer_4 = req.body.answers[3].answer_4
     let ans_4_isCorrect = req.body.answers[3].is_correct
 
     conn.query(`INSERT INTO questions(question) VALUES('${question}')`,
@@ -81,17 +81,17 @@ app.post('/api/questions', (req, res) => {
                 return;
             }
         })
-    conn.query(`SELECT id FROM questions WHERE question = '${question}';`, function (err, rows) {
+    conn.query(`SELECT id FROM questions WHERE question = '${question}';`, function (err, result) {
         if (err) {
             console.log(err.toString());
             res.status(500).send('Database error');
             return;
         }
-
-        conn.query(`INSERT INTO answers (question_id,answer,is_correct) VALUES(${rows[0].id},'${answer_1}',${ans_1_isCorrect}),
-    ('${rows[0].id},'${answer_2}',${ans_2_isCorrect}),
-    ('${rows[0].id},'${answer_3}',${ans_3_isCorrect}),
-    ('${rows[0].id},'${answer_4}',${ans_4_isCorrect});)`,
+        console.log(result);
+        conn.query(`INSERT INTO answers (question_id,answer,is_correct) VALUES(${result[0].id},'${answer_1}',${ans_1_isCorrect}),
+    (${result[0].id},'${answer_2}',${ans_2_isCorrect}),
+    (${result[0].id},'${answer_3}',${ans_3_isCorrect}),
+    (${result[0].id},'${answer_4}',${ans_4_isCorrect});`,
             function (err, rows) {
                 if (err) {
                     console.log(err.toString());
