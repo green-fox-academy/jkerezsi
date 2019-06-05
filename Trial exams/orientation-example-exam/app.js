@@ -10,6 +10,11 @@ const PORT = 3005;
 app.use(express.static('./public'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
 
 let conn = mysql.createConnection({
     host: process.env.DB_HOST,
@@ -61,6 +66,7 @@ app.get('/a/:alias', (req, res) => {
                         }
                         conn.query(`SELECT url FROM url WHERE alias = '${alias}';`,
                             function (err, rows) {
+                                console.log(rows[0].url)
                                 if (err) {
                                     console.log(err.toString());
                                     res.status(400).send(err.message);
@@ -76,6 +82,10 @@ app.get('/a/:alias', (req, res) => {
 app.post('/api/links', (req, res) => {
     let url = req.body.url
     let alias = req.body.alias
+    if (url === "" || alias === ""){
+        res.status(500).json({'message':'URL or alias is missing'
+        })
+    }
     conn.query(`SELECT * FROM url WHERE alias = '${alias}';`,
         function (err, rows) {
             if (err) {
@@ -125,8 +135,6 @@ app.delete('/api/links/:id', (req, res) => {
             }
         })
 });
-
-
 
 
 app.listen(PORT, () => {
